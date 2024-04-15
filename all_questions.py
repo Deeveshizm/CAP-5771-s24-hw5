@@ -55,8 +55,9 @@ def question2():
     # The formulas should only use the variable 'p'. The formulas should be
     # a valid Python expression. Use the functions in the math module as
     # required.
-    p = 0.5*math.log((1-0.3)/0.3)
-    answers['(c) Weight update'] = p
+    
+    # p = 0.5*math.log((1-0.3)/0.3)
+    answers['(c) Weight update'] = "0.5*math.log((1-0.3)/0.3)"
 
     # type: float
     # the answer should be correct to 3 significant digits
