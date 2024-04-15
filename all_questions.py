@@ -124,13 +124,13 @@ def question6():
     answers['(a) C1-TPR'] = 'p'
 
     # type: eval_float
-    answers['(a) C2-TPR'] = '2p'
+    answers['(a) C2-TPR'] = '2*p'
 
     # type: eval_float
     answers['(a) C1-FPR'] = 'p'
 
     # type: eval_float
-    answers['(a) C2-FPR'] = '2p'
+    answers['(a) C2-FPR'] = '2*p'
 
     # type: string
     # Hint: The random guess line in an ROC curve corresponds to TPR=FPR.
@@ -181,13 +181,13 @@ def question8():
     answers = {}
 
     # type: eval_float
-    answers['(a) precision for C0'] = 0.1
+    answers['(a) precision for C0'] = 'p*100/p*1000'
 
     # type: eval_float
     answers['(a) recall for C0'] = 'p'
 
     # type: eval_float
-    answers['(b) F-measure of C0'] = '0.2p/(p+0.1)' # or 0.2
+    answers['(b) F-measure of C0'] = '0.2*p/(p+0.1)' # or 0.2
 
     # type: string
     # choices: ['yes', 'no', 'unknown']
