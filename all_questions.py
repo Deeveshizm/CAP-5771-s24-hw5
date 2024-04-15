@@ -56,11 +56,12 @@ def question2():
     # a valid Python expression. Use the functions in the math module as
     # required.
     p = 0.5*math.log((1-0.3)/0.3)
-    answers['(c) Weight update'] = 0.4236 # or p
+    answers['(c) Weight update'] = p
 
     # type: float
     # the answer should be correct to 3 significant digits
-    w_new = 1*math.exp(p)
+    
+    # w_new = 1*math.exp(p)
     answers['(d) Weight influence'] = 1.5275 # or w_new 
     return answers
 
