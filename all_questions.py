@@ -19,7 +19,7 @@ def question1():
 
     # type: float
     # Calculate the probability.
-    answers['(c)'] = 0.08
+    answers['(c)'] = 0.008
     return answers
 
 
@@ -56,13 +56,13 @@ def question2():
     # a valid Python expression. Use the functions in the math module as
     # required.
     
-    # p = 0.5*math.log((1-0.3)/0.3)
-    answers['(c) Weight update'] = "0.5*math.log((1-0.3)/0.3)"
+    # w = 0.5*math.log((1-0.3)/0.3)
+    answers['(c) Weight update'] = "0.5*math.log((1-p)/p)"
 
     # type: float
     # the answer should be correct to 3 significant digits
     
-    # w_new = 1*math.exp(p)
+    # w_new = 1*math.exp(w)
     answers['(d) Weight influence'] = 1.5275 # or w_new 
     return answers
 
@@ -135,11 +135,10 @@ def question6():
     # type: string
     # Hint: The random guess line in an ROC curve corresponds to TPR=FPR.
     # choices: ['yes', 'no']
-    answers['(b) C2 better classifier than C1?'] = 'No'
+    answers['(b) C2 better classifier than C1?'] = 'yes'
 
     # type: explain_string
-    answers['(b) C2 better classifier than C1? Explain'] = 'Since both the classifiers have the same TPR and FPR, they are equal in terms of performance classifiers.'
-
+    answers['(b) C2 better classifier than C1? Explain'] = 'C2 is a better classifier than C1 because both of them have same precision but C2 has a higher recall which means it is able to identify more positive cases.'  
     # type: string
     # choices: ['TPR/FPR', 'precision/recall']
     answers['(c) Which metric?'] = 'precision/recall'
@@ -181,7 +180,7 @@ def question8():
     answers = {}
 
     # type: eval_float
-    answers['(a) precision for C0'] = 'p*100/p*1000'
+    answers['(a) precision for C0'] = '1/10' # or p*100/p*1000
 
     # type: eval_float
     answers['(a) recall for C0'] = 'p'
@@ -197,7 +196,7 @@ def question8():
     # What is the range of p for which C1 is better than random?  What is
     # "?" in the expression "p > ?"
 
-    answers['p-range'] = 0.1
+    answers['p-range'] = 0.3
     return answers
 
 
